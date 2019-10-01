@@ -1,6 +1,12 @@
 const mix = require('laravel-mix');
 
 /*
+ * Sets the path to the generated assets. By default, this is the `/dist` folder
+ * in the theme. If doing something custom, make sure to change this everywhere.
+ */
+mix.setPublicPath( 'dist' );
+
+/*
  * Builds sources maps for assets.
  *
  * @link https://laravel.com/docs/5.6/mix#css-source-maps
